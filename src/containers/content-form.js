@@ -33,8 +33,9 @@ class ContentForm extends Component {
         //     {this.renderForm()}
         // </form>
         return (
-            // <div>Hello world!</div>
-
+            <form>
+                <input class="form-control" type="text" placeholder="Header" />
+            </form>
         );
     }
     // mapDispatchToProps(dispatch) {
