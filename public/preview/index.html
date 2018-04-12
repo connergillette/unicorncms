@@ -1,0 +1,182 @@
+<html>
+
+<head>
+  <title>QuickQuiz by Knowledge Anywhere</title>
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container-fluid hero-container">
+      <div class="container">
+        <div class="row hero-banner">
+          <div class="col-md-9">
+            <h1>
+              <span class="em">QuickQuiz</span> by Knowledge Anywhere
+            </h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <!-- Slack button goes here -->
+            <div class="slack-button">
+              <a href="https://slack.com/oauth/authorize?client_id=2536347334.283042275365&scope=incoming-webhook,commands,bot,team:read,im:read,chat:write:bot">
+                <img class="center-block" alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+                  srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"
+                />
+              </a>
+            </div>
+            <!-- End Slack button -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container content-container">
+      <!-- <img class="logo center-block" src="./QuickQuiz Logo.png" /> -->
+      <div class="row info">
+        <div class="col-md-6 content-column">
+          <h2 class="em">How smart is your team?</h2>
+          <p>QuickQuiz allows you to build and deploy quizzes to your team via Slack. These quizzes can be used to reinforce
+            and confirm knowledge on product, policies, technology, company direction, market trends, etc.</p>
+          <h2>Installation</h2>
+          <p>Click on the "Add to Slack" button in the banner and follow the instructions to add QuickQuiz to your Slack team.
+            You can also visit our
+            <a href="https://slack.com/apps/A8B1883AR-quickquiz">App Directory page</a> and install QuickQuiz from there.</p>
+          <h2>Support</h2>
+          <p>More instructions can be found on our
+            <a href="https://knowany.zendesk.com/hc/en-us/categories/360000102954-Integrations-Apps">Zendesk</a>. If that doesn't answer your questions, please contact
+            <a href="mailto:support@knowledgeanywhere.com">support@knowledgeanywhere.com</a> with any questions.</p>
+        </div>
+        <div class="col-md-6 content-column">
+          <h2>An administrator can:</h2>
+          <ul>
+            <li>Build a new quiz in a few minutes</li>
+            <li>Assign users and channels to a quiz</li>
+            <li>Have flexibility in the number of answer choices</li>
+            <li>Get a list of user results for quizzes they create</li>
+          </ul>
+
+          <h2>A user can:</h2>
+          <ul>
+            <li>Answer quiz questions in Slack</li>
+            <li>Receive private results</li>
+            <li>Get instant feedback on the correctness of their answers</li>
+            <li>Get a summary of results</li>
+            <li>Get a notification if there are quizzes assigned to them</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="commands-list center-block">
+        <h2>Commands</h2>
+
+        <table class="table">
+          <tr>
+            <td class="em">
+              /quiz start
+            </td>
+            <td>
+              Starts the next quiz assigned to you.
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz list assigned
+            </td>
+            <td>
+              Lists all quizzes available for you to take.
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz list created
+            </td>
+            <td>
+              Lists all quizzes created by you.
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz results "Quiz Name"
+            </td>
+            <td>
+              Lists the scores of everybody who has taken the provided quiz.
+              <span class="note">(You must be the creator of the quiz)</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz clear "Quiz Name"
+            </td>
+            <td>
+              Allows everybody who has already taken the quiz to take it again.
+              <span class="note">(You must be the creator of the quiz)</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz create
+            </td>
+            <td>
+              Starts or resumes a quiz builder.
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz assign "Quiz Name" @username
+            </td>
+            <td>
+              Assigns a user to a quiz.
+              <span class="note">(You must be the creator of the quiz)</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz assign "Quiz Name" #channel
+            </td>
+            <td>
+              Assigns a channel to a quiz.
+              <span class="note">(You must be the creator of the quiz)</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz cancel
+            </td>
+            <td>
+              Cancels a quiz builder and deletes its quiz.
+            </td>
+          </tr>
+          <tr>
+            <td class="em">
+              /quiz help
+            </td>
+            <td>
+              Displays all possible QuickQuiz commands.
+            </td>
+          </tr>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid logo-banner text-center">
+      <div class="row">
+        <!-- <div class="col-md-2 col-md-offset-4"> -->
+        <a href="https://knowledgeanywhere.com" target="_blank">
+          <img class="footer-logo" src="./Company Logo.png" />
+        </a>
+        <!-- </div>
+        <div class="col-md-2 offset-md-4 ">
+          <img class="footer-logo" src="./QuickQuiz Logo.png" />
+        </div>
+      </div> -->
+      </div>
+  </footer>
+
+</body>
+
+</html>

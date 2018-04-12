@@ -1,0 +1,81 @@
+html > body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  min-height: 85%;
+}
+
+.logo {
+  max-height: 100px;
+  margin-top: 30px;
+}
+
+.em {
+  font-weight: bold;
+}
+
+.hero-container {
+  background-color: #29C0D9;
+  /* background-color: #2990d9; */
+  min-height: 150px;
+  color: white;
+}
+
+.hero-banner {
+  padding-top: 30px;
+}
+
+.hero-banner > h1 {
+  vertical-align: center;
+}
+
+.slack-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: right;
+}
+
+
+.content-column > ul, p {
+  font-size: 16pt;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+.logo-banner {
+  height: 15%;
+  background-color:#212224;
+  padding: 40px;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.footer-logo {
+  max-height: 80px;
+}
+
+.note {
+  color: silver;
+}
+
+table, .table {
+  width: 400px;
+}
+
+td {
+  min-width: 200px;
+  max-width: 400px;
+  font-size: 12pt;
+}
+
+.commands-list {
+  padding-bottom: 30px;
+  width: 80%;
+}

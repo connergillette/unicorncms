@@ -10,7 +10,7 @@ class PagePreview extends Component {
 
     render() {
         return (
-            <iframe src="/preview/index1.html"></iframe>
+            <iframe src="/preview/index.html"></iframe>
         );
     }
 
