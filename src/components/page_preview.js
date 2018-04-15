@@ -13,10 +13,6 @@ class PagePreview extends Component {
             <iframe src="/preview/index.html"></iframe>
         );
     }
-
-    createMarkup() {
-
-    }
 }
 
 export default PagePreview;
