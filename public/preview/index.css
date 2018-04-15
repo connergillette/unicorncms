@@ -79,22 +79,3 @@ td {
   padding-bottom: 30px;
   width: 80%;
 }
-
-/* BEGIN uCMS PREVIEW STYLING */
-
-.editable {
-  outline-style: solid;
-  outline-color: rgb(0,0,0,0);
-
-  -webkit-transition: outline-color .2s ease-in-out;
-  -o-transition: outline-color .2s ease-in-out;
-  -ms-transition: outline-color .2s ease-in-out;
-  -moz-transition: outline-color .2s ease-in-out;
-  transition: outline-color .2s ease-in-out;
-}
-
-.editable:hover:not(#focused-tag) {
-  outline-color: rgb(57, 108, 173);
-}
-
-/* END uCMS PREVIEW STYLING */

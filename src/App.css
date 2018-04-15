@@ -129,7 +129,7 @@ input:focus, textarea:focus {
 ::-webkit-scrollbar-track {
     background-color: transparent;
 }
-::-webkit-scrollbar-track-piece {}
+/* ::-webkit-scrollbar-track-piece {} */
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.623);
