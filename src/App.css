@@ -29,7 +29,6 @@ iframe {
 }
 
 .form {
-    background-color: rgb(85, 85, 85);
     /* opacity: .5; */
     color: white;
     padding: 20px;
@@ -42,6 +41,7 @@ iframe {
     height: 100%;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(85, 85, 85);
 }
 
 .btn-primary {
@@ -119,6 +119,67 @@ input:focus, textarea:focus {
     height: 100%;
 }
 
+.tab-bar {
+    background-color: rgb(85, 85, 85);
+    border-radius: 4px;
+    margin: 0px;
+}
+
+.tab {
+    height: 40px;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-top-right-radius: 4px;
+    /* background-color: rgb(105, 105, 105); */
+}
+
+.tab:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0px;
+}
+
+#active-tab {
+    box-shadow: 10px -2px 8px -2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(85, 85, 85);
+}
+
+.form-control, .status-button {
+    font-size: 18px; 
+    height: 40px;   
+}
+
+.button-error {
+    background-color: rgb(138, 11, 11);
+    color: white;
+}
+
+/* 
+#left-tab {
+    border-top-left-radius: 4px;
+}
+
+#right-tab {
+    border-top-right-radius: 4px;
+} */
+
+.tab:hover {
+    background-color: silver;
+    color: black;
+}
+
+.form-control:disabled {
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+.btn-danger {
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* BEGIN SCROLLBAR */
+
 ::-webkit-scrollbar {
     width: 5px;
     padding-left: 100px;
@@ -134,3 +195,5 @@ input:focus, textarea:focus {
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.623);
 }
+
+/* END SCROLLBAR */

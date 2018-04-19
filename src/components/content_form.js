@@ -9,18 +9,27 @@ class ContentForm extends Component {
 
     render() {
         return (
-            <form>
-                <input className="form-control" id="header-text" type="text" placeholder="Header Text" />
-                {/* <textarea onInput={() => {this.getTextAreaSize();}} class="form-control" style={{height: "100px"}} id="body-text" placeholder="Body Text">
-                </textarea> */}
-                <textarea className="form-control" id="body-text" placeholder="Body Text">
-                </textarea>
-            </form>
+            // <div>
+            //     <form>
+            //         <input className="form-control" id="header-text" type="text" placeholder="Header Text" />
+            //         <textarea className="form-control" id="body-text" placeholder="Body Text">
+            //         </textarea>
+            //     </form>
+            // </div>
+            <div>
+                <form>
+                    {/* TODO: Move this away from the form tag */}
+                    <a> 
+                        <div class="input-group">
+                            <input type="text" className="form-control" value="Masthead Text" disabled />
+                            <div className="input-group-btn">
+                                <button className="status-button btn-danger btn btn-secondary">!</button>
+                            </div>
+                        </div>
+                    </a>
+                </form>
+            </div>
         );
-    }
-
-    getTextAreaSize() {
-        let textarea = document.getElementById("body-text");
     }
 }
 

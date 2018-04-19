@@ -196,22 +196,19 @@
         for (var k = 0; k < textInputs[i].length; k++) {
           currentTag[k].classList.add("editable");
 
-          // currentTag[k].id = "focused-tag";
-
           currentTag[k].onclick = function (event) {
             console.log("Input clicked!");
-            // event.target.id = "focused-tag";
             makeInput(event.target);
           };
         }
       }
     }
 
-    function applyChanges() {
+    function applyChanges(value) {
       let focusedTag = document.getElementById("focused-tag");
-      let focusedInput = document.getElementById("focused-input")
-      focusedTag.innerHTML = focusedInput.value;
-      console.log(focusedInput.value);
+      let focusedInput = document.getElementById("focused-input");
+      
+      focusedTag.innerHTML = value;
       focusedTag.id = "";
       focusedInput.id = "";
     }
@@ -221,7 +218,7 @@
         target.id = "focused-tag";
         target.innerHTML =
           `<input id="focused-input" style='color: black; width:100%' 
-              value='${target.innerHTML.trim()}' onfocusout='applyChanges()'
+              value='${target.innerHTML.trim()}' onfocusout='applyChanges(this.value)'
               type='text' />`;
         document.getElementById("focused-input").focus();
       }

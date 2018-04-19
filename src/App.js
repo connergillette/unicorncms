@@ -15,8 +15,20 @@ class App extends Component {
             </div>
           </div>
           <div className="content-window col-md-3">
-            <div className="content-container form">
-              <ContentForm />
+            <div className="content-container">
+              <div className="tab-bar container-fluid">
+                <div className="row">
+                  {/* <div class="col-md-6"> */}
+                    <div id="active-tab" className="tab text-center">Changes</div>
+                  {/* </div> */}
+                  {/* <div class="col-md-6"> */}
+                    <div className="tab text-center">Content</div>
+                  {/* </div> */}
+                </div>
+              </div>
+              <div className="form">
+                <ContentForm />
+              </div>
             </div>
           </div>
         </div>
