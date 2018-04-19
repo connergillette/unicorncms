@@ -148,6 +148,7 @@ input:focus, textarea:focus {
 .form-control, .status-button {
     font-size: 18px; 
     height: 40px;   
+    width: 40px;
 }
 
 .button-error {

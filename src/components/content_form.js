@@ -34,7 +34,7 @@ class ContentForm extends Component {
                             <div className="input-group">
                                 <input type="text" className="form-control" value="Masthead Text" disabled />
                                 <div className="input-group-btn">
-                                    <button className="status-button btn-danger btn btn-secondary">!</button>
+                                    <button className="status-button btn-warning btn btn-secondary">~</button>
                                 </div>
                             </div>
                         </a>
@@ -44,7 +44,7 @@ class ContentForm extends Component {
                             <div className="input-group">
                                 <input type="text" className="form-control" value="Masthead Text" disabled />
                                 <div className="input-group-btn">
-                                    <button className="status-button btn-danger btn btn-secondary">!</button>
+                                    <button className="status-button btn-success btn btn-secondary">v</button>
                                 </div>
                             </div>
                         </a>
