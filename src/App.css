@@ -178,6 +178,10 @@ input:focus, textarea:focus {
     border-radius: 0px 4px 4px 0px;
 }
 
+.change-item {
+    margin-bottom: 10px;
+}
+
 /* BEGIN SCROLLBAR */
 
 ::-webkit-scrollbar {

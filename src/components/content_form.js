@@ -19,14 +19,36 @@ class ContentForm extends Component {
             <div>
                 <form>
                     {/* TODO: Move this away from the form tag */}
-                    <a> 
-                        <div class="input-group">
-                            <input type="text" className="form-control" value="Masthead Text" disabled />
-                            <div className="input-group-btn">
-                                <button className="status-button btn-danger btn btn-secondary">!</button>
+                    <div className="change-item">
+                        <a>
+                            <div className="input-group">
+                                <input type="text" className="form-control" value="Masthead Text" disabled />
+                                <div className="input-group-btn">
+                                    <button className="status-button btn-danger btn btn-secondary">!</button>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    <div className="change-item">
+                        <a>
+                            <div className="input-group">
+                                <input type="text" className="form-control" value="Masthead Text" disabled />
+                                <div className="input-group-btn">
+                                    <button className="status-button btn-danger btn btn-secondary">!</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="change-item">
+                        <a>
+                            <div className="input-group">
+                                <input type="text" className="form-control" value="Masthead Text" disabled />
+                                <div className="input-group-btn">
+                                    <button className="status-button btn-danger btn btn-secondary">!</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </form>
             </div>
         );
