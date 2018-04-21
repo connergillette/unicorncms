@@ -175,12 +175,16 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-.btn-danger {
+.btn {
     border-radius: 0px 4px 4px 0px;
 }
 
 .change-item {
     margin-bottom: 10px;
+}
+
+.change-item:hover {
+    height: 300px;
 }
 
 /* BEGIN SCROLLBAR */
