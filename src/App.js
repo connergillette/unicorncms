@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PagePreview from './components/page_preview';
+import PagePreview from './containers/page_preview';
 import ContentForm from './components/content_form';
 
 class App extends Component {
@@ -19,10 +19,10 @@ class App extends Component {
               <div className="tab-bar container-fluid">
                 <div className="row">
                   {/* <div class="col-md-6"> */}
-                    <div id="active-tab" className="tab text-center">Changes</div>
+                  <div id="active-tab" className="tab text-center">Changes</div>
                   {/* </div> */}
                   {/* <div class="col-md-6"> */}
-                    <div className="tab text-center">Content</div>
+                  <div className="tab text-center">Content</div>
                   {/* </div> */}
                 </div>
               </div>
@@ -34,6 +34,10 @@ class App extends Component {
         </div>
       </div>
     );
+  }
+
+  change() {
+    return (<div>Hello!</div>);
   }
 }
 

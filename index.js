@@ -12,4 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', controller);
 
+// app.post('/', controller.change);
+
 // app.get('/resume', resume);

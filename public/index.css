@@ -16,3 +16,23 @@
   }
   
   /* END uCMS PREVIEW STYLING */
+
+  /* BEGIN SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 5px;
+  padding-left: 100px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* ::-webkit-scrollbar-track-piece {} */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+/* END SCROLLBAR */

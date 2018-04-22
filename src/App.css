@@ -183,10 +183,6 @@ input:focus, textarea:focus {
     margin-bottom: 10px;
 }
 
-.change-item:hover {
-    height: 300px;
-}
-
 /* BEGIN SCROLLBAR */
 
 ::-webkit-scrollbar {
