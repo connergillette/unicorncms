@@ -17,7 +17,9 @@ body {
 }
 
 .preview {
-    background-color: transparent;
+    /* background-color: transparent; */
+    height: 100%;
+    width: 100%;
 }
 
 iframe {

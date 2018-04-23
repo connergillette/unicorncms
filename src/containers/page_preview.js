@@ -10,9 +10,14 @@ class PagePreview extends Component {
 
     render() {
         return (
-            <iframe src="/preview/index.html"></iframe>
-            // <div dangerouslySetInnerHTML={{ __html: __html }}></div>
+            // <iframe src="/preview/index.html"></iframe>
+            <object className="preview" type="text/html" data="/preview/index.html"></object>
+            // <object className="preview" type="text/html"></object>
         );
+    }
+
+    injectHTML() {
+        return "<div style='height: 100px; width: 100px; background-color: white'>Hello!</div>";
     }
 }
 
@@ -27,4 +32,11 @@ export default PagePreview;
  * THEN allow for HTML importing
  * 
  * Boom.
+ */
+
+/**
+ * <object> seems to work too, and might give me better access to the HTML
+ * However, might be easiest to have script process file(s) first, then just
+ * feed it to the React frontend. Listening for changes would still be a
+ * challenge, though.
  */
