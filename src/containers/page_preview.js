@@ -9,6 +9,20 @@ class PagePreview extends Component {
     }
 
     render() {
+        let rawHTML = <div className="preview">
+            <div className="container-fluid main-header">
+                <div className="container">Main Header</div>
+            </div>
+            <div className="container">
+                <h1>Page Header</h1>
+                <h2>Subheader</h2>
+                <p>Page Content</p>
+            </div>
+        </div>;
+
+
+        // return this.processHTML(rawHTML);
+        // return rawHTML;
         return (
             // <iframe src="/preview/index.html"></iframe>
             <object className="preview" type="text/html" data="/preview/index.html"></object>
@@ -16,8 +30,45 @@ class PagePreview extends Component {
         );
     }
 
-    injectHTML() {
-        return "<div style='height: 100px; width: 100px; background-color: white'>Hello!</div>";
+    processHTML(document) {
+        let textInputs = [];
+        let h1 = document.getElementsByTagName("h1");
+        let h2 = document.getElementsByTagName("h2");
+
+        textInputs = textInputs.concat(h1);
+        textInputs = textInputs.concat(h2);
+
+        for (var i = 0; i < textInputs.length; i++) {
+            var currentTag = textInputs[i];
+            for (var k = 0; k < textInputs[i].length; k++) {
+                currentTag[k].classList.add("editable");
+
+                currentTag[k].onclick = function (event) {
+                    console.log("Input clicked!");
+                    this.makeInput(event.target);
+                };
+            }
+        }
+    }
+
+    applyChanges(value, document) {
+        let focusedTag = document.getElementById("focused-tag");
+        let focusedInput = document.getElementById("focused-input");
+
+        focusedTag.innerHTML = value;
+        focusedTag.id = "";
+        focusedInput.id = "";
+    }
+
+    makeInput(target, document) {
+        if (target.id != "focused-tag") {
+            target.id = "focused-tag";
+            target.innerHTML =
+                `<input id="focused-input" style='color: black; width:100%' 
+                  value='${target.innerHTML.trim()}' onfocusout='applyChanges(this.value)'
+                  type='text' />`;
+            document.getElementById("focused-input").focus();
+        }
     }
 }
 
